@@ -44,7 +44,7 @@ navLinks.forEach( link => {
 const toHomeBtn = document.getElementById('backToHome');
 
 window.addEventListener('scroll', () => {
-    if(window.pageYOffset > screen.height) {
+    if(window.pageYOffset > screen.height / 3 * 2) {
         toHomeBtn.style.display = 'block';
     } else {
         toHomeBtn.style.display = 'none';
@@ -67,9 +67,17 @@ window.addEventListener('scroll', () => {
 })
 
 // Slowing down the vitess of scrolling 
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 300,
-    easing: 'easeOutQuad'
-});
+if(screen.width > 500) {
+    const scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 600,
+        easing: 'easeOutQuad'
+    });
+} else {
+    const scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        easing: 'easeInOutQuad'
+    });
+}
+
 
 
