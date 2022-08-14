@@ -67,6 +67,9 @@ window.addEventListener('scroll', () => {
 })
 
 // Slowing down the vitess of scrolling 
-
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 300,
+    easing: 'easeOutQuad'
+});
 
 
