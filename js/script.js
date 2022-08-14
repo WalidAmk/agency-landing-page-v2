@@ -72,12 +72,7 @@ if(screen.width > 500) {
         speed: 600,
         easing: 'easeOutQuad'
     });
-} else {
-    const scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 1000,
-        easing: 'easeInOutQuad'
-    });
-}
+} 
 
 
 
