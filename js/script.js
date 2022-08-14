@@ -53,10 +53,10 @@ window.addEventListener('scroll', () => {
 
 // Style nav bar whene scrolling 
 
-const scrollBar = document.getElementById('navBarCocntainer');
+const scrollBar = document.getElementById('navBarContainer');
 
 window.addEventListener('scroll', () => {
-    if(window.pageYOffset > 250) {
+    if(window.pageYOffset > 200) {
         scrollBar.style.position = 'fixed';
         scrollBar.style.zIndex = '11111';
         scrollBar.style.top = '0';
