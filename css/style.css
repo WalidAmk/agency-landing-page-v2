@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/* style back to home btn */
+
+#backToHome {
+    position: fixed;
+    z-index: 1111;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border: solid 4px #fff;
+    border-radius: 30px;
+    display: none;
+}
+
+#backToHome a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+#backToHome a img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1024px) {
+    #backToHome {
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #backToHome {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border: solid 3px #fff;
+        border-radius: 20px;
+        display: none;
+    }
+}
+
+/* style copyright section */
+
+#copyrightBox {
+    padding: 10px 30px;
+    background-color: #d00a2b;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #copyrightBox {
+        padding: 8px 20px;
+        font-size: .8rem;
+    }
+}
+
+/* style newsletter section */
+
+#newsSection {
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+#newsSection h3 {
+    font-size: 2.3rem;
+    color: black;
+    letter-spacing: .9px;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+}
+
+#newsSection input {
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+}
+
+@media (max-width: 1024px) {
+
+    #newsSection {
+        width: 100%;
+        padding: 30px 60px;
+    }
+
+    #newsSection h3 {
+        font-size: 1.8rem;
+        color: black;
+        letter-spacing: .9px;
+        padding-bottom: 40px;
+    }
+
+    #newsSection input {
+        font-size: 1rem;
+        font-weight: 500;
+        width: 100%;
+        max-width: 600px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #newsSection {
+        width: 100%;
+        padding: 30px;
+    }
+
+    #newsSection h3 {
+        font-size: 1.3rem;
+        padding-bottom: 30px;
+    }
+
+    #newsSection input {
+        font-size: .8rem;
+        font-weight: 500;
+        width: 100%;
+        max-width: 400px;
+        padding: 6px;
+    }
+
+}
+

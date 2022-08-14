@@ -1,0 +1,190 @@
+
+:root {
+    --main-color: #d00a2b;
+}
+
+
+#contactSection {
+    width: 100%;
+    background-image: url('../assets/images/contactUs.jpg');
+    background-size: cover;
+}
+
+#contactSectionAni {
+    width: 100%;
+    padding: 0 100px 40px 100px;
+    background-color: rgba(208, 10, 43, .4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contactSectionAni h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 60px;
+    color: #fff;
+    background-color: var(--main-color);
+    border-bottom: solid 5px #fff;
+    border-right: solid 5px #fff;
+    border-left: solid 5px #fff;
+}
+
+#contactFormContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+#contactNameEmailBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contactFormContainer input, #contactFormContainer textarea {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 3px #fff;
+    border-right: solid 3px #fff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1.4px;
+}
+
+#contactFormContainer input:focus, #contactFormContainer textarea:focus {
+    outline: none;
+}
+
+#contactFormContainer input::placeholder, #contactFormContainer textarea::placeholder {
+    color: #fff;
+    font-weight: 500;
+}
+
+#contactFormContainer input[type=text], #contactFormContainer textarea {
+    width: 100%;
+}
+
+#contactFormContainer textarea {
+    min-width: 100%;
+    max-width: 100%;
+    height: 300px;
+    min-height: 300px;
+    max-height: 400px;
+}
+
+#contactNameEmailBox input[type=text] {
+    width: calc(25% - 10px);
+}
+
+#contactNameEmailBox input[type=email] {
+    width: calc(75% - 10px);
+}
+
+#contactFormContainer button {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border: none;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    border-left: solid 1px #000;
+    border-top: solid 1px #000;
+    outline: none;
+    box-shadow: 2px 2px 2px 2px #000;
+    transition: all .4s ease;
+}
+
+#contactFormContainer button:hover, #contactFormContainer button:focus {
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+@media (max-width: 1024px) {
+
+    #contactSectionAni {
+        padding: 0 60px 40px 60px;
+    }
+
+    #contactSectionAni h3 {
+        font-size: 2rem;
+        padding: 10px 40px;
+    }
+
+    #contactNameEmailBox {
+        flex-direction: column;
+    }
+
+    #contactNameEmailBox input[type=text] {
+        width: 100%;
+    }
+    
+    #contactNameEmailBox input[type=email] {
+        width: 100%;
+    }
+
+    #contactFormContainer input, #contactFormContainer textarea {
+        font-size: 1.2rem;
+        border-bottom: solid 2px #fff;
+        border-right: solid 2px #fff;
+        word-spacing: 1.3px;
+        margin-bottom: 30px;
+    }
+
+    #contactFormContainer textarea {
+        height: 230px;
+        min-height: 200px;
+        max-height: 300px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #contactSectionAni {
+        padding: 0 30px 40px 30px;
+    }
+
+    #contactSectionAni h3 {
+        font-size: 1.4rem;
+        padding: 8px 20px;
+        font-weight: 600;
+    }
+
+    #contactFormContainer input, #contactFormContainer textarea {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    #contactFormContainer textarea {
+        height: 200px;
+        min-height: 200px;
+        max-height: 300px;
+    }
+
+    #contactFormContainer button {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 8px 20px;
+        border-bottom: solid 1px #fff;
+        border-right: solid 1px #fff;
+        border-left: solid .5px #000;
+        border-top: solid .5px #000;
+    }
+
+}
+
+
+
+
+
+

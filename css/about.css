@@ -1,0 +1,133 @@
+
+:root {
+    --main-color: #d00a2b;
+}
+
+#servicesSection {
+    padding: 40px 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: calc((100vw - 230px) / (2 / 1.25));
+    min-height: 318px;
+    max-height: 484px;
+}
+
+#servicesPicture {
+    width: calc(50% - 15px);
+    height: 100%;
+    border: solid 2px black;
+    background-image: url('../assets/images/blank-image.png');
+    background-position: center;
+    background-size: 60px;
+    background-repeat: no-repeat;
+}
+
+#servicesContentContainer {
+    width: calc(50% - 15px);
+    height: 100%;
+}
+
+#servicesContentContainer h2 {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+#servicesContentContainer h3 {
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+#servicesContentContainer p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    text-transform: initial;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+#servicesContentContainer a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-color);
+    border: solid 4px var(--main-color);
+    transition: all .4s linear;
+}
+
+#servicesContentContainer a:hover {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+@media (max-width: 1024px) {
+    
+    #servicesSection {
+        padding: 40px 60px;
+        height: calc((100vw - 110px) / (2 * 1.25));
+        min-height: 752px;
+        flex-direction: column;
+    }
+
+    #servicesPicture {
+        width: 100%;
+        height: calc(100% - 288px);
+        min-height: 384px
+    }
+
+    #servicesContentContainer {
+        width: 100%;
+        height: 288px;
+    }
+
+}
+
+@media (max-width: 600px) { 
+
+    #servicesSection {
+        padding: 40px 30px;
+        height: calc((100vw - 110px) / (2 * 1.25));
+        min-height: 752px;
+    }
+
+    #servicesPicture {
+        width: 100%;
+        height: calc(100% - 288px);
+        min-height: 284px
+    }
+
+    #servicesContentContainer {
+        width: 100%;
+        height: 388px;
+    }
+
+    #servicesContentContainer h3 {
+        font-size: 1.7rem;
+    }
+
+    #servicesContentContainer a {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: var(--main-color);
+        border: solid 4px var(--main-color);
+        transition: all .4s linear;
+    }
+
+}
+
+
+
+
+
