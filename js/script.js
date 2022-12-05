@@ -1,12 +1,5 @@
 
 
-// Loading animation
-const loadingBox = document.getElementById('loadBox');
-
-window.addEventListener('load', () => {
-    loadingBox.style.opacity = '0';
-    loadingBox.style.visibility = 'hidden';
-})
 
 
 // Navigation bar animation

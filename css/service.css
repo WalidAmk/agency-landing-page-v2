@@ -60,19 +60,6 @@
     transition: all .5s linear;
 }
 
-.serviceBox:hover {
-    transform: scale(1.075);
-    background-color: rgba(255, 255, 255, 1);
-    border-bottom: solid 10px var(--main-color);
-}
-
-.serviceBox:hover h3 {
-    color: #d00a2b;
-}
-.serviceBox:hover p {
-    color: black;
-}
-
 .serviceBox h3 {
     font-size: 1.2rem;
     color: #fff;
